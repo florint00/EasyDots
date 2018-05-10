@@ -5,13 +5,13 @@ $(document).ready(function(){
 
 
     var tool = new Tool();
-    var c = Shape.Circle(200, 200, 80); // cercul1 si coordonatele sale
-    c.fillColor = 'black'; // culoarea cercului1
-    var text = new PointText(200, 200); // bucata unde va aparea textul 
-    text.justification = 'center'; // textul va fi in mijlocul cercului.
-    text.fillColor = '#f4f4'; // culoarea textului
-    text.fontSize = 20; // marimea textului
-    text.content = 'hello world'; // textul in sine-> hello world
+    var c = Shape.Circle(200, 200, 80); // circle and his coordonates
+    c.fillColor = 'black'; // circle color
+    var text = new PointText(200, 200); // text 
+    text.justification = 'center'; // text's position will be centered
+    text.fillColor = '#f4f4'; // text color
+    text.fontSize = 20; // text size
+    text.content = 'hello world'; // text = 'hello world' 
     tool.onMouseDown = function(event) {
     var c = Shape.Circle(event.point.x, event.point.y, 20);
     c.fillColor = 'red';
@@ -21,4 +21,4 @@ $(document).ready(function(){
     paper.view.draw(); // tells Paper.js to actually draw smthing on screen.
 });
 
-// acest program este realizat cu libraria Paper.js
+// made with jQuery and Paper.js 
